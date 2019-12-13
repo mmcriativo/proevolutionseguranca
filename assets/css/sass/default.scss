@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+h1{
+    font-size: 3.19em;
+}
+
+h2{
+    font-size: 1.94em;
+}
+
+h3{
+    font-size: 1.19em;
+}
+
+p,u,li{
+    font-size: 1em;
+}
+
+@media only screen and (max-width:1024px) and (min-height:1366px){
+
+    h1{
+        font-size: 4.5em;
+    }
+    
+    h2{
+        font-size: 3em;
+    }
+    
+    h3{
+        font-size: 1.8em;
+    }
+    
+    p,li{
+        font-size: 1.6em;
+    }       
+
+}
+
+
+@import 'grid';
+
+$color1 : #161616;
+$color2 : #ffc16a;
+$color3 : #fff;
+$color4 : #f6f6f6;
+$color5 : #f60;
+$color6 : #003366;
+$color7 : #35a1ce;
+$color8 : #2a2a2a;
+$color9 : #9B9B9B; 
+.bg1{
+    background-color: $color1;
+}
+.bg2{
+    background-color: $color2;
+}
+.bg3{
+    background-color: $color3;
+}
+.bg4{
+    background-color: $color4;
+}
+.bg6{
+    background-color: $color6;
+}
+.bg8{
+    background-color: $color8;
+}
+.color-1{
+    color: $color1!important;
+}
+.color-2{
+    color: $color2!important;
+}
+.color-3{
+    color: $color3!important;
+}
+.color-6{
+    color: $color6!important;
+}
+
+%img-cover{
+    width: 100%;
+}
+
+%bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bg-img-about1{
+    background-image: url('../img/ft-13.jpg');
+    @extend %bg-img;
+}
+.bg-img-about2{
+    background-image: url('../img/ft-11.jpg');
+    @extend %bg-img;
+}
+.bg-img-about3{
+    background-image: url('../img/ft-12.jpg');
+    @extend %bg-img;
+}
+.bg-img-about4{
+    background-image: url('../img/ft-10.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about5{
+    background-image: url('../img/ft-14.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about6{
+    background-image: url('../img/ft-1.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about7{
+    background-image: url('../img/ft-4.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about8{
+    background-image: url('../img/ft-5.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about9{
+    background-image: url('../img/ft-3.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about10{
+    background-image: url('../img/ft-6.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about11{
+    background-image: url('../img/ft-7.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about12{
+    background-image: url('../img/ft-3.jpg');
+    @extend %bg-img;
+}
+
+.bg-img-about13{
+    background-image: url('../img/ft-15.jpg');
+    @extend %bg-img;
+}
+
+
+.justify-left{
+    justify-content: left;
+}
+
+.justify-right{
+    justify-content: flex-end;
+}
+
+.box-default{
+    padding: 90px 0;
+}
+
+@media only screen and (max-width:450px){
+    .box-default{
+        padding: 45px 0;
+    }
+}
+
+.padding-default{
+    padding: 90px 0;
+}
+
+.active-menu {
+    color: $color5!important;
+}
+
+@media only screen and (max-width:1024px){
+    .active-menu {
+        color: $color6!important;
+    }
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 237px;
+    padding: 20px 0;
+    background-color: $color7;
+    color: $color4;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid $color7;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: $color7;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-section h2{
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:1024px){
+    .header-section h2{
+        margin-bottom: 90px;
+    }
+}
+@media only screen and (max-width:450px){
+    .header-section h2{
+        margin-bottom: 45px;
+    }
+}
+
+.header-section h2::after{
+    @extend %h2-section;
+}
+
+%h2-section{
+    content: " ";
+        width: 95px;
+        height: 5px;
+        display: block;
+        background-color: $color2;
+        margin-top: 5px;
+}
+
+@import 'index';
+@import 'about';
+@import 'service';
+@import 'contacts';
+@import 'all-service';
+
